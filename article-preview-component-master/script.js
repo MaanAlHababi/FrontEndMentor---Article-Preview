@@ -14,8 +14,7 @@ shareButton.addEventListener('click', () => {
 });
 
 window.addEventListener('resize', () => {
-    if (window.innerWidth >= 768 && !shareMenu.classList.contains('hidden')) {
-        shareButton.classList.toggle('dark');
-        shareMenu.classList.toggle('hidden');
+    if (window.innerWidth >= 768 && publisherSection.classList.contains('hidden')) {
+        publisherSection.classList.toggle('hidden');
     }
 });
